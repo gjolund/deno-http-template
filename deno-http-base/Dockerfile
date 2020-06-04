@@ -1,6 +1,6 @@
 ARG DENO_VERSION=1.0.5
 FROM openfaas/of-watchdog:0.7.7 as watchdog
-FROM deno-alpine:${DENO_VERSION}
+FROM austinrivas/deno-alpine:${DENO_VERSION}
 
 WORKDIR /root/
 
