@@ -18,3 +18,13 @@ This template provides a thin wrapper around the [Deno Http Server](https://doc.
 
 ### [Example Handler](https://github.com/austinrivas/deno-http-template/blob/master/template/deno-http/function/handler.ts)
 ### [Wrapper](https://github.com/austinrivas/deno-http-template/blob/master/template/deno-http/main.ts)
+
+## Extras
+
+This repo also contains a [base image](https://github.com/austinrivas/deno-http-template/blob/master/deno-http-base/Dockerfile) that can be extended as needed by other templates.
+
+The base image is consumed by the deno template itself and the include [okteto image](https://github.com/austinrivas/deno-http-template/blob/master/okteto/Dockerfile) which can be used for remote development on the [Okteto Platform](https://okteto.com/) for remote OpenFaaS development.
+
+## Example Function
+
+A working example of this function template can be found [here](https://github.com/austinrivas/openfaas_deno_func).
