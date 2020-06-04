@@ -27,4 +27,4 @@ A working example of this function template can be found [here](https://github.c
 
 This repo also contains a [base image](https://github.com/austinrivas/deno-http-template/blob/master/deno-http-base/Dockerfile) that can be extended as needed by other templates.
 
-The base image is consumed by the deno template itself and the include [okteto image](https://github.com/austinrivas/deno-http-template/blob/master/okteto/Dockerfile) which can be used for remote development on the [Okteto Platform](https://okteto.com/) for remote OpenFaaS development.
+The base image is consumed by the deno template itself and the included [okteto image](https://github.com/austinrivas/deno-http-template/blob/master/okteto/Dockerfile) which can be used for remote development on the [Okteto Platform](https://okteto.com/) for remote OpenFaaS development.
