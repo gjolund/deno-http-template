@@ -3,8 +3,6 @@ OpenFaaS Deno HTTP template
 
 An OpenFaaS of-watchdog template written for Deno.
 
-This repository contains one Deno template for OpenFaaS.
-
 ## Installation
 
 ```sh
