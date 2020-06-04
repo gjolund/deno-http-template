@@ -1,9 +1,9 @@
 OpenFaaS Deno HTTP template
 =============================================
 
-An OpenFaaS of-watchdog template written in Rust.
+An OpenFaaS of-watchdog template written for Deno.
 
-This repository contains two Rust templates for OpenFaaS, one of which gives additional control over the HTTP request and response. They will both handle higher throughput than the classic watchdog due to the process being kept warm.
+This repository contains one Deno template for OpenFaaS.
 
 ## Installation
 
