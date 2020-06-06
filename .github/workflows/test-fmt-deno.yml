@@ -1,4 +1,4 @@
-name: Test and Format Deno Template
+name: Test and Enforce Deno Format
 
 on:
   [push, pull_request]
@@ -12,6 +12,6 @@ jobs:
         with:
           deno-version: 1.0.5
       - name: Test Deno Template
-        run: deno test
+        run: deno test --allow-net
       - name: Enforce Deno Format
         run: if [[ $(deno fmt) ]]; then exit 1; fi
