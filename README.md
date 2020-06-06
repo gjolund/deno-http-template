@@ -12,6 +12,12 @@ Languages available as templates:
 - deno-http
 ```
 
+## Create Function
+
+```sh
+faas new <name> --lang deno-http
+```
+
 ## Testing
 
 Deno provides a built in test runner.
