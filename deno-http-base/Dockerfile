@@ -8,12 +8,14 @@ COPY --from=watchdog /fwatchdog /usr/bin/fwatchdog
 
 ENV FUNC_HOME_DIR=/home/app
 ENV FUNC_HANDLER_DIR=${FUNC_HOME_DIR}/function
+ENV FUNC_LIB_DIR=${FUNC_HOME_DIR}/lib
 ENV DENO_DIR=${FUNC_HOME_DIR}/.cache/deno
 
 # Make function directory
 # Install deno
 # Set function user permissions
 RUN mkdir -p ${FUNC_HANDLER_DIR} \
+  && mkdir -p ${FUNC_LIB_DIR} \
   && mkdir -p ${DENO_DIR} \
   && chmod +x /usr/bin/fwatchdog \
   && apk --no-cache add ca-certificates \
