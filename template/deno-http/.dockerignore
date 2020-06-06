@@ -1,3 +1,4 @@
 *.test.ts
 Dockerfile
 template.yml
+okteto.yml
