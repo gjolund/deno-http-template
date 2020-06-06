@@ -12,6 +12,6 @@ jobs:
         with:
           deno-version: 1.0.5
       - name: Test Deno Template
-        run: deno test .
-      - name: Format Deno Template
-        run: deno fmt .
+        run: deno test
+      - name: Enforce Deno Format
+        run: if [[ $(deno fmt) ]]; then exit 1; fi
