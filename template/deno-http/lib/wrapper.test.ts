@@ -1,6 +1,6 @@
-import { 
-  assert, 
-  assertEquals 
+import {
+  assert,
+  assertEquals,
 } from "https://deno.land/std/testing/asserts.ts";
 import {
   Response as ServerResponse,
@@ -20,7 +20,7 @@ const body = "Hello Deno!",
 
 Deno.test("wrapper: exists", () => {
   assert(wrapper);
-})
+});
 
 Deno.test("wrapper: handles http request", async () => {
   const server = serve({ port });
