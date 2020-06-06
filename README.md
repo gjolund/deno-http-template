@@ -12,6 +12,27 @@ Languages available as templates:
 - deno-http
 ```
 
+## Testing
+
+Deno provides a built in test runner.
+
+```sh
+deno test --allow-net
+```
+
+This repo also includes vscode debug configurations.
+  - Run Tests
+  - Debug Current Test File
+  - Debug Seleted Test Case
+
+### Linting
+
+Deno also provides a built in code linter.
+
+```sh
+deno fmt
+```
+
 ## Usage
 
 This template provides a thin wrapper around the [Deno Http Server](https://doc.deno.land/https/deno.land/std/http/server.ts) provided by the Deno stdlib. The wrapper implementation closely mirrors the Deno [serve](https://doc.deno.land/https/deno.land/std/http/server.ts#serve) function.
