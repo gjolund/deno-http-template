@@ -4,8 +4,7 @@ WORKDIR ${FUNC_HOME_DIR}
 
 USER fnUser
 
-COPY main.ts .
-COPY function/handler.ts function/
+COPY . .
 
 RUN deno cache function/handler.ts main.ts
 
