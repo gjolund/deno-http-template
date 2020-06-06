@@ -55,3 +55,5 @@ A working example of this function template can be found [here](https://github.c
 This repo also contains a [base image](https://github.com/austinrivas/deno-http-template/blob/master/deno-http-base/Dockerfile) that can be extended as needed by other templates.
 
 The base image is consumed by the deno template itself and the included [okteto image](https://github.com/austinrivas/deno-http-template/blob/master/okteto/Dockerfile) which can be used for remote development on the [Okteto Platform](https://okteto.com/) for remote OpenFaaS development.
+
+A [Test and Enforce Deno Format github action](https://github.com/austinrivas/openfaas_deno_func/blob/master/.github/workflows/test-fmt-deno.yml) is included that will trigger on pull request. This action runs the deno tests and throws an error if `deno fmt` returns changes.
