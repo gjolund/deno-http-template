@@ -1,4 +1,4 @@
-ARG DENO_VERSION=1.0.5
+ARG DENO_VERSION=1.1.0
 FROM openfaas/of-watchdog:0.7.7 as watchdog
 FROM austinrivas/deno-alpine:${DENO_VERSION}
 
